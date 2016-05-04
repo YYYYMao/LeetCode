@@ -51,8 +51,7 @@ class PeekingIterator(object):
             self.hasPeek = False
             return self.re
         else :
-            return self.iterator.next()
-
+            return self.iterator.next()Z
     def hasNext(self):
         """
         :rtype: bool
