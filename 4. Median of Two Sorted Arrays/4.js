@@ -6,8 +6,8 @@
 var findMedianSortedArrays = function(nums1, nums2) {
     nums1 = nums1.concat(nums2);
     nums1 = nums1.sort(function(a, b) {
-  return a - b;
-});
+  	return a - b;
+    });
     console.log(nums1);
     if (nums1.length %2 == 0){
        var n = parseInt(nums1.length/2);
