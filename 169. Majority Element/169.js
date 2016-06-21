@@ -9,6 +9,8 @@ You may assume that the array is non-empty and the majority element always exist
  */
 // 1. 計算每個數字出現次數
 // 2. 把陣列sort 取中間值
+// 3. Moore's voting algorithm
+
 var majorityElement = function(nums) {
     var n = Math.floor(nums.length/2);	
     var count = 0;
