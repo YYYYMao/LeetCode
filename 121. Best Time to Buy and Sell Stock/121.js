@@ -22,12 +22,9 @@ var maxProfit = function(prices) {
     var min = prices[0];
     var max = 0;	
     for(var i = 1 ; i < prices.length ; i++){
-          if(prices[i] < min) {
-          	min = prices[i];
-          }
-          if((prices[i] - min) > max){
-          	max = prices[i] - min;
-          }
+          min = prices[i] < min ? prices[i] : min;
+          var tmp = prices[i] - min;
+          max = tmp > max ? tmp: max;
     }
     return max;
 };
