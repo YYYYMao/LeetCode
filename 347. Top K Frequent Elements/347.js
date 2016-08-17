@@ -23,15 +23,12 @@ var topKFrequent = function(nums, k) {
     for(i in arr){
        if(sort[arr[i]] == undefined) sort[arr[i]] = []; 	
        sort[arr[i]].push(i);
-    }console.log(sort);
+    }
     for(i = sort.length-1,j = 0 ; j < k ;i--){
-    	console.log(i);
              if(sort[i] !== undefined){
-                for(var k = 0 ; k < sort[i].length ; k++){
-                  console.log(sort[i].length);	
-                  result.push(parseInt(sort[i][k]));	
+                for(var l = 0 ; l < sort[i].length ; l++){
+                  result.push(parseInt(sort[i][l]));	
                   j++;	
-                  console.log(j);
                 }	
              }
     }
