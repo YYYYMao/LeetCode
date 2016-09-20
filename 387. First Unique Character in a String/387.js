@@ -21,7 +21,7 @@ var firstUniqChar = function(s) {
     	a[s[i]] ++;
     }
     for(var i = 0 ; i < s.length ; i++){
-    	if(a[s[i]] == 0)  return i;
+    	if(a[s[i]] == 1)  return i;
     }
     return -1;
 };
