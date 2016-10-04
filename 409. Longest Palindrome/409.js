@@ -38,19 +38,3 @@ var longestPalindrome = function(s) {
     return n+flag;
 };
 
-0 1
-{ a: 1 }
-0 2
-{ a: 1, b: 1 }
-0 3
-{ a: 1, b: 1, c: 1 }
-2 1
-{ a: 1, b: 1, c: 0 }
-2 2
-{ a: 1, b: 1, c: 1 }
-4 0
-{ a: 1, b: 1, c: 0 }
-4 1
-{ a: 1, b: 1, c: 0, d: 1 }
-6 -1
-{ a: 1, b: 1, c: 0, d: 0 }
