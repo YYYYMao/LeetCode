@@ -23,6 +23,7 @@ var mySqrt = function(x) {
     let max = x;
     let mid = parseInt(x/2);
     let min = 0;
+    if(x == 1) return 1;
     while(mid !== min){
         if(mid*mid>x) { 
             max = mid ; //parseInt((max + min )/2)+1;
